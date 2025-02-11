@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agenda de Tarefas</h1>
+        <div class="content">
+            <!-- Área de criação de tarefas -->
+            <div class="creation-area">
+                <form id="taskForm">
+                    <input type="text" id="taskInput" placeholder="Nova tarefa" required>
+                    <input type="date" id="taskDate" required>
+                    <textarea id="taskDetails" placeholder="Detalhes da tarefa"></textarea>
+                    <select id="fontSelect">
+                        <option value="Arial, sans-serif" style="font-family: Arial, sans-serif;">Arial</option>
+                        <option value="'Courier New', monospace" style="font-family: 'Courier New', monospace;">Courier New</option>
+                        <option value="'Times New Roman', serif" style="font-family: 'Times New Roman', serif;">Times New Roman</option>
+                        <option value="'Comic Sans MS', cursive" style="font-family: 'Comic Sans MS', cursive;">Comic Sans MS</option>
+                        <option value="'Verdana', sans-serif" style="font-family: 'Verdana', sans-serif;">Verdana</option>
+                        <option value="'Georgia', serif" style="font-family: 'Georgia', serif;">Georgia</option>
+                        <option value="'Palatino Linotype', serif" style="font-family: 'Palatino Linotype', serif;">Palatino Linotype</option>
+                        <option value="'Trebuchet MS', sans-serif" style="font-family: 'Trebuchet MS', sans-serif;">Trebuchet MS</option>
+                        <option value="'Impact', sans-serif" style="font-family: 'Impact', sans-serif;">Impact</option>
+                        <option value="'Lucida Sans Unicode', sans-serif" style="font-family: 'Lucida Sans Unicode', sans-serif;">Lucida Sans</option>
+                    </select>
+                    <button type="submit">Adicionar Tarefa</button>
+                </form>
+            </div>
+
+            <!-- Área de exibição de tarefas -->
+            <div class="display-area">
+                <h2>Tarefas Pendentes</h2>
+                <ul id="taskList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
