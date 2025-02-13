@@ -142,13 +142,12 @@ li input[type="checkbox"] {
 .edit-mode button.cancel {
     background-color: #6c757d;
 }
-/* Cores para urgência */
 li.urgent {
-    background-color: #fff3cd; /* Laranja claro */
+    background-color: #ffcba8; 
     border-color: #ffeeba;
 }
 
 li.past-due {
-    background-color: #f8d7da; /* Vermelho claro */
+    background-color: #ffaeb5; 
     border-color: #f5c6cb;
 }
